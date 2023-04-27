@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: rgb(18, 18, 128);
+}
+
+/*Marcos*/
+.marco {
+  display: flex;
+  width: auto;
+  height: 100vh;
+  background-color: rgb(231, 238, 246);
+}
+
+.marco-encriptador {
+  width: 70%;
+  height: auto;
+  padding: 40px 20px 20px 20px;
+}
+
+.marco-boton {
+  width: 100%;
+  height: 15%;
+}
+
+.marco-texto {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-botonCopiar {
+  display: none;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+
+.marco-boton {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgb(231, 238, 246);
+  padding-top: 10px;
+}
+
+.marco-boton-copiar {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/*Inputs*/
+
+.texto {
+  display: flex;
+  text-align: center;
+  width: 99%;
+  height: 82%;
+  font-size: 20pt;
+  border:none;
+  color: rgb(18, 18, 128);
+  background-color: rgb(231, 238, 246);
+  resize: none;
+}
+
+.texto-encriptado {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  min-height: 200px;
+  flex: 1;
+  border: none;
+  overflow-y: auto;
+  resize: none;
+  text-align: center;
+  font-size: 10pt;
+  color: rgb(18, 18, 128);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 5px 10px 5px;
+}
+
+/*Botones*/
+
+.encriptar {
+  width: 20%;
+  height: 48%;
+  border-radius: 10px;
+  background-color: rgb(18, 18, 128);
+  color: rgb(252, 252, 252);
+}
+
+.desencriptar {
+  width: 20%;
+  height: 48%;
+  border-radius: 10px;
+  margin-left: 15px;
+  border: solid 1px rgb(18, 18, 128);
+  color: rgb(18, 18, 128);
+  font-weight: 300;
+}
+
+.copiar {
+  display: flex;
+  width: 50%;
+  height: 60%;
+  border-radius: 10px;
+  margin-left: 15px;
+  border: solid 1px rgb(18, 18, 128);
+  color: rgb(18, 18, 128);
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-copiar {
+  display: none;
+  width: 50%;
+  height: 60%;
+  border-radius: 10px;
+  margin-left: 15px;
+  border: rgb(18, 18, 128);
+  color: rgb(18, 18, 128);
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+/*Imagen y texto Principal*/
+
+.imagen-texto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  border: none;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.imagen-texto img {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 10%;
+}
+
+.solicitud-texto p {
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.aviso {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 5%;
+  font-weight: 100;
+  font-size: 8pt;
+}
+
+.aviso img {
+  width: 20px;
+  padding-right: 5px;
+}
+
+.nombre {
+  position: absolute; /* o absolute, dependiendo de lo que necesites */
+  bottom: 0;
+  left: 0;
+  padding: 0px 0px 10px 10px;
+  font-size: 8pt;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .marco {
+    flex-direction: column;
+  }
+
+  .marco-encriptador {
+    width: auto;
+    height: 70%;
+  }
+  .marco-texto {
+    width: 100%;
+    height: auto;
+  }
+
+  .imagen-texto {
+    height: 55%;
+    background-color: white;
+    align-content: center;
+    padding-top: 4%;
+  }
+
+  .imagen-texto img {
+    display: none;
+  }
+
+  .imagen-texto h2 {
+    font-size: 12pt;
+    font-weight: 400;
+  }
+
+  .imagen-texto p {
+    font-size: 10pt;
+  }
+
+  .solicitud-texto {
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1;
+  }
+
+  .texto-botonCopiar {
+    height: 30%;
+  }
+
+  
+  /*Botones*/
+
+  .encriptar {
+    width: 40%;
+    height: 88%;
+  }
+
+  .desencriptar {
+    width: 40%;
+    height: 88%;
+  }
+
+  .aviso {
+    justify-content: left;
+    padding-left: 30px;
+  }
+
+  .texto-encriptado {
+    height: 20%;
+    
+  }
+
+  .texto-botonCopiar {
+    flex-direction: column;
+    position: relative;
+    height: 20%;
+    justify-items: center;
+  }
+
+  .marco-boton-copiar {
+    display: none;
+  }
+
+  .btn-copiar {
+    display: flex;
+    width: 40%;
+    height: 150%;
+    margin-left: 30%;
+    border: solid 1px rgb(18, 18, 128);
+   
+  }
+}
